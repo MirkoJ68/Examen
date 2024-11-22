@@ -1,23 +1,26 @@
 import { useState } from 'react'
 
 let board = 
-[null,null,null,null,null]
-[null,null,null,null,null]
-[null,null,null,null,null]
-[null,null,null,null,null]
-[null,null,null,null,null]
+[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
 
-let locate = 0;
+let locate;
 let clickCount = 0;
 let gameOver = false; 
 let treasureLocation = (0,0);
+let celda
 
 function correr(){
   clickCount += 1;
-}
-function foundTreausre(){
-  {let locate = Math.floor(Math.random(1,26))}
+  
+  }
+
+
+function buscar(){
+  locate = Math.floor(Math.random()*24)
   console.log(locate)
+  if (board[locate]){
+
+}
 }
 
 function App() {
@@ -25,7 +28,8 @@ function App() {
   return (
     <>
   <div >
-    {foundTreausre()}
+    <h1>Encuentra el tesoro</h1>
+    {buscar()}
        <div className="cuadro">
         <div className="coso" onClick={correr}>□</div>
         <div className="coso" onClick={correr}>□</div>
