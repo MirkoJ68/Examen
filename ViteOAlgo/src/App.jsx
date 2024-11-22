@@ -6,7 +6,7 @@ let board =
 let locate;
 let clickCount = 0;
 let gameOver = false; 
-let treasureLocation = (0,0);
+let treasureLocation = null;
 let celda
 
 function correr(){
