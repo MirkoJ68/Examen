@@ -1,0 +1,9 @@
+.cuadro {
+  display: flex;
+  font-size:14cm;
+  display: grid;
+  grid-template-columns: repeat(5, 100px); grid-template-rows: repeat(5, 100px); gap: 125px;
+  align-content: center;
+  justify-content: center;
+  height:50vh;
+} 
